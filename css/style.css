@@ -1,0 +1,37 @@
+  body {
+    padding: 30px 30px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("../images/155630-laferrari-ferrari_f12-spidometr-legkovyye_avtomobili-odometr-3840x2160.jpg") no-repeat center center/cover;
+    }
+    .container {
+     width: 100%;
+     max-width: 1140px;
+     padding-left: 20px;
+     padding-right: 20px;
+     margin-left: auto;
+     margin-right: auto;
+}
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+    }
+
+
+    .card-stil {
+      flex: 1 1 250px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.7); 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      color: #000;
+    }
+    h1{
+        color: white;
+        text-align: center;
+    }
