@@ -10,18 +10,16 @@ fetch("https://json-api.uz/api/project/fn43/cars")
     
     err.elParent.innerHTML = `<h2 class="xatolik">Xatolik yuz berdi</h2>`;
   })
-  .finally(() => {});
+  .finally(() => {
+    console.log("Menga farqi yo'q");
+    
+  });
 
 function ui(cars) {
   cars.forEach((car) => {
     const elCard = elCerdTemp.content.cloneNode(true);
-
-    // Title
     elCard.querySelector(".card-title").textContent = car.name;
-
-    // Description with innerHTML (original English labels)
     elCard.querySelector(".card").classList.add("card-stil");
-
     elCard.querySelector("p").innerHTML = `
       <b>Trim:</b> ${car.trim} <br>
       <b>Generation:</b> ${car.generation} <br>
