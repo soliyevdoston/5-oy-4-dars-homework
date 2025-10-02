@@ -1,21 +1,27 @@
 const elCerdTemp = document.getElementById("cardTemp");
 const elParent = document.getElementById("parent");
+const elLoader = document.getElementById("loader");
+const elError = document.getElementById("error");
 
-fetch("https://json-api.uz/api/project/fn43/cars")
+function init() {
+  elLoader.classList.remove("hidden");
+  fetch("https://json-api.uz/api/project/fn43/cars")
   .then((res) => res.json())
   .then((res) => {
     ui(res.data);
   })
-  .catch((err) => {
-    
-    err.elParent.innerHTML = `<h2 class="xatolik">Xatolik yuz berdi</h2>`;
+  .catch(() => {
+    elError.classList.remove("hidden");
   })
   .finally(() => {
-    console.log("Menga farqi yo'q");
+    elLoader.classList.add("hidden");
     
   });
+}
+init();
 
 function ui(cars) {
+  elParent.innerHTML = "";
   cars.forEach((car) => {
     const elCard = elCerdTemp.content.cloneNode(true);
     elCard.querySelector(".card-title").textContent = car.name;

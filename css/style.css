@@ -25,7 +25,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.7); /* oq rang, yarim shaffof */
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   color: #000;
 }
@@ -35,10 +35,20 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 16px;
 }
-.xatolik {
+.text-error {
   color: red;
   border: 1px solid red;
   padding: 12px;
   border-radius: 8px;
   text-align: center;
+}
+.card-skeleron{
+  width: 356px;
+  flex: 1 1 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.7); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #000;
 }
