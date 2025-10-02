@@ -35,3 +35,10 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 16px;
 }
+.xatolik {
+  color: red;
+  border: 1px solid red;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}

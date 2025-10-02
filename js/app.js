@@ -6,7 +6,10 @@ fetch("https://json-api.uz/api/project/fn43/cars")
   .then((res) => {
     ui(res.data);
   })
-  .catch(() => {})
+  .catch((err) => {
+    
+    err.elParent.innerHTML = `<h2 class="xatolik">Xatolik yuz berdi</h2>`;
+  })
   .finally(() => {});
 
 function ui(cars) {
