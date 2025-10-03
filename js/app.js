@@ -15,6 +15,7 @@ function init() {
   })
   .finally(() => {
     elLoader.classList.add("hidden");
+    elError.classList.add("hidden");
     
   });
 }
