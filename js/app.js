@@ -5,7 +5,7 @@ const elError = document.getElementById("error");
 
 function init() {
   elLoader.classList.remove("hidden");
-  fetch("https://json-api.uz/api/project/fn43/cars")
+  fetch("https://json-api.uz/api/project/fn44/cars")
   .then((res) => res.json())
   .then((res) => {
     ui(res.data);
