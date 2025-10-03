@@ -9,13 +9,15 @@ function init() {
   .then((res) => res.json())
   .then((res) => {
     ui(res.data);
+     elError.classList.add("hidden");
   })
   .catch(() => {
     elError.classList.remove("hidden");
+   
   })
   .finally(() => {
     elLoader.classList.add("hidden");
-    elError.classList.add("hidden");
+   
     
   });
 }
