@@ -12,6 +12,9 @@
      margin-left: auto;
      margin-right: auto;
 }
+#error{
+  display: none;
+}
 .hidden{
   display: none;
 }
@@ -37,7 +40,8 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 16px;
 }
-.text-error {
+#error {
+  
   color: red;
   border: 1px solid red;
   padding: 12px;

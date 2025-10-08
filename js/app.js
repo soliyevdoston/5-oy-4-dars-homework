@@ -5,20 +5,21 @@ const elError = document.getElementById("error");
 
 function init() {
   elLoader.classList.remove("hidden");
+   elError.classList.add("hidden");
   fetch("https://json-api.uz/api/project/fn44/cars")
   .then((res) => res.json())
   .then((res) => {
     ui(res.data);
-     elError.classList.add("hidden");
+   
   })
   .catch(() => {
+  console.log("xatolik sodir boldi");
+  
     elError.classList.remove("hidden");
-   
   })
   .finally(() => {
     elLoader.classList.add("hidden");
    
-    
   });
 }
 init();
